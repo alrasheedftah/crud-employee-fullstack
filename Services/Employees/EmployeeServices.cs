@@ -118,8 +118,8 @@ namespace EmployeeCrudTaskAPi.Services.Employees
                 EmployeeExsits.Degree = NewModel.Degree;
                 EmployeeExsits.Department = NewModel.Department;
                 EmployeeExsits.Name = NewModel.Name;
-                EmployeeExsits.Phone = NewModel.PhoneNumber;
-                EmployeeExsits.Salary = NewModel.EndSalary;
+                EmployeeExsits.Phone = NewModel.Phone;
+                EmployeeExsits.Salary = NewModel.Salary;
                 _crudEmployeeDBContext.Employees.Update(EmployeeExsits);
                 await _crudEmployeeDBContext.SaveChangesAsync();
                 return new SuccessResponse()

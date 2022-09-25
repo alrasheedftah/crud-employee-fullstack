@@ -73,8 +73,8 @@ namespace EmployeeCrudTaskAPi.Controllers.Employees
                 Degree = NewModel.Degree,
                 Department = NewModel.Department,
                 Name = NewModel.Name,
-                Phone = NewModel.PhoneNumber,
-                Salary = NewModel.EndSalary,
+                Phone = NewModel.Phone,
+                Salary = NewModel.Salary,
             });
             if (EmployeeData == null)
                 throw new HttpResponseException()
